@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>usblist</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body>
+
+  <div id="app">
+    <v-app>
+      <v-main>
+        <v-container>
+          <!-- <div id="error"></div> -->
+          <!-- <div id="ports"></div> -->
+          <!-- <div v-if="items.length ==== 0">
+            No ports discovered
+          </div> -->
+          <v-btn @click="refresh">Refresh</v-btn>
+          <!-- <v-text-field label="refreshRate" v-model="form.refreshRate" type="number" step="1000" suffix="ms"></v-text-field> -->
+          <v-data-table :headers="headers" :items="items"></v-data-table>
+        </v-container>
+      </v-main>
+    </v-app>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+</body>
+
+</html>

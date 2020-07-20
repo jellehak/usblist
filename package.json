@@ -1,0 +1,32 @@
+{
+  "name": "usblist",
+  "version": "1.0.0",
+  "description": "Application to easily check you usb ports",
+  "main": "app/main.js",
+  "build": {
+    "appId": "nl.yellowdigital.usblist",
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    },
+    "files": [
+      "app/**/*",
+      "!**/node_modules/*"
+    ]
+  },
+  "scripts": {
+    "dev": "npx electron ./app/main.js",
+    "start": "electron ./app",
+    "install": "electron-rebuild",
+    "pack": "npx electron-builder --dir",
+    "dist": "npx electron-builder"
+  },
+  "author": "Jelle",
+  "devDependencies": {
+    "electron": "^9.1.0",
+    "electron-rebuild": "^1.11.0"
+  },
+  "dependencies": {
+    "serialport": "^9.0.0",
+    "tableify": "^1.1.0"
+  }
+}
