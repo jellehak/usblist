@@ -22,7 +22,7 @@
   },
   "author": "Jelle",
   "devDependencies": {
-    "electron": "^9.1.0",
+    "electron": "^11.5.0",
     "electron-rebuild": "^1.11.0"
   },
   "dependencies": {
