@@ -11,12 +11,9 @@
 
 const serialport = require('serialport')
 
-const { remote } = require('electron')
-const { BrowserWindow } = remote
-const currentWindow = remote.getCurrentWindow()
 // console.log(mainWindow)
 
-const { Tray, Menu } = remote
+const { app, Menu, Tray } = require('electron')
 
 const vue = new Vue({
   el: '#app',
